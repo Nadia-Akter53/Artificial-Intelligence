@@ -1,3 +1,5 @@
+-----------------------------------------------------
+
 1. Write a python program to find the sum of odd and even numbers from a set of numbers.
 
 numbers = [10, 15, 21, 30, 42, 55, 60]
@@ -70,3 +72,28 @@ print("Fibonacci Series:", end=" ")
 for i in range(n):
     print(a, end=" ")
     a, b = b, a + b
+
+
+7. Write a python program to find the largest number between two numbers using function.
+
+def find_largest(a, b):
+    if a > b:
+        return a
+    else:
+        return b
+
+num1 = int(input("Enter first number: "))
+num2 = int(input("Enter second number: "))
+
+print("The largest number is:", find_largest(num1, num2))
+
+
+8. Write a python program to find the sum of the numbers passed as parameters.
+
+def find_sum(*numbers):
+    total = 0
+    for n in numbers:
+        total += n
+    return total
+
+print("Sum of numbers:", find_sum(10, 20, 30, 40))
