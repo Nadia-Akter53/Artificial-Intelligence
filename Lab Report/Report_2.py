@@ -1,7 +1,7 @@
+#Implement a Python program that uses the A* search algorithm to find the shortest path in a 2D grid maze.
+
+
 import heapq
-
-
-
 
 def manhattan(x1, y1, x2, y2):
     return abs(x1 - x2) + abs(y1 - y2)
